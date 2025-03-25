@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Lickity Split Ice Cream Shop</title>
+    <link rel="icon" href="assets/img/logo.jpg" type="image/jpg">
+    <script src="https://kit.fontawesome.com/681bc761ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p class="header-title">Lickity Split Ice Cream Shop</p>
+        <div class="header-contact">
+            <a href="#contact"><i class="fas fa-map-marker-alt"></i>301 East Michigan Ave, Augusta, MI, 49012</a>
+            <a href="tel:(269)569-6640" class="header-contact-phone-number"><i class="fas fa-phone-alt"></i>(269) 569-6640</a>
+        </div>
+        <div class="header-social">
+            <a href="https://www.facebook.com/643004882397148">
+                <img src="assets/icons/facebook-hand-drawn-circle.svg" alt="facebook page">
+                <img src="assets/icons/facebook-hand-drawn-circle-active.svg" alt="facebook page" class="h-s-active">
+            </a>
+            <a href="https://www.instagram.com/lickityspliticecream/">
+                <img src="assets/icons/instagram-hand-drawn-circle.svg" alt="instagram page">
+                <img src="assets/icons/instagram-hand-drawn-circle-active.svg" alt="instagram page" class="h-s-active">
+            </a>
+        </div>
+        <div class="header-menu-placeolder" id="header_menu_placeolder">
+            <div class="header-menu" id="header_menu">
+                <div class="mobile-header-menu-toggler">
+                    <img src="assets/icons/close-white.svg" alt="" style="display: none;">
+                    <img src="assets/icons/menu-white.svg" alt="+" onclick="toggle_menu();" id="menu_toggler_icon">
+                </div>
+                <i onclick="scroll_to('about'); toggle_menu();">About Us</i>
+                <i onclick="scroll_to('gallery'); toggle_menu();">Gallery</i>
+                <i onclick="scroll_to('reviews'); toggle_menu();">Reviews</i>
+                <i onclick="scroll_to('contact'); toggle_menu();">Contact</i>
+            </div>
+        </div>
+    </header>
+    <div class="first-section">
+        <div class="f-s-bg-filter">
+            <div class="f-s-container">
+                <p class="f-s-title-text">Lickity Split Ice Cream Shop</p>
+                <p class="f-s-regular-text ">
+                    We carry Plainwell & Mooville brand Ice Creams, Sno Balls, Shakes, Malts, Hot Dogs, Snacks, and Scrumptious Sundaes
+                </p>
+                <p>&nbsp;</p>
+                <p class="f-s-regular-text">
+                    We value all customers, and have vegan, sugar-free, dairy-free, and nut-free flavors!
+                </p>
+            </div>
+            <div class="f-s-container f-s-empty-column"></div>
+        </div>
+        
+    </div>
+    <div class="about" id="about">
+        <p class="section-title-text">About Us</p>
+        <div class="about-container">
+            <div class="about-left-side">
+                <p class="about-description">
+                    We are a small ice cream shop located in Augusta, Michigan, right off of M-96. With years of serving our community under our belt, we have a reputation for quality and commitment to customer service. Serving everything from Hot Dogs to Sno Cones, we pride ourselves on being a place where everyone can find something yummy to eat!
+                </p>
+                <div class="about-catchphrase">
+                    <img src="assets/icons/hand-drawn-border.png" alt="|">
+                    <p class="about-catchphrase-text">I SCREAM YOU SCREAM WE ALL SCREAM</p>
+                    <p class="about-catchphrase-text">LICKITY SPLIT ICE CREAM!</p>
+                </div>
+            </div>
+            <div class="about-right-side">
+                <img src="assets/img/logo.jpg" alt="Lickity Split">
+            </div>
+        </div>
+    </div>
+    <div class="gallery" id="gallery">
+        <p class="section-title-text">Gallery</p>
+        <div class="gallery-images-container">
+            <img src="assets/icons/square-placeholder.png" style="background-image: url('assets/img/gallery-photo-1.jpg');" onclick="show_fullsize(this)" class="gallery-image-item">
+            <img src="assets/icons/square-placeholder.png" style="background-image: url('assets/img/gallery-photo-2.jpg');" onclick="show_fullsize(this)" class="gallery-image-item">
+            <img src="assets/icons/square-placeholder.png" style="background-image: url('assets/img/gallery-photo-3.jpg');" onclick="show_fullsize(this)" class="gallery-image-item">
+            <img src="assets/icons/square-placeholder.png" style="background-image: url('assets/img/gallery-photo-4.jpg');" onclick="show_fullsize(this)" class="gallery-image-item">
+            <img src="assets/icons/square-placeholder.png" style="background-image: url('assets/img/gallery-photo-5.jpg');" onclick="show_fullsize(this)" class="gallery-image-item">
+            <img src="assets/icons/square-placeholder.png" style="background-image: url('assets/img/gallery-photo-6.jpg');" onclick="show_fullsize(this)" class="gallery-image-item">
+            <img src="assets/icons/square-placeholder.png" style="background-image: url('assets/img/gallery-photo-7.jpg');" onclick="show_fullsize(this)" class="gallery-image-item">
+            <img src="assets/icons/square-placeholder.png" style="background-image: url('assets/img/gallery-photo-8.jpg');" onclick="show_fullsize(this)" class="gallery-image-item">
+            <img src="assets/icons/square-placeholder.png" style="background-image: url('assets/img/gallery-photo-9.jpg');" onclick="show_fullsize(this)" class="gallery-image-item">
+            <img src="assets/icons/square-placeholder.png" style="background-image: url('assets/img/gallery-photo-10.jpg');" onclick="show_fullsize(this)" class="gallery-image-item">
+            <img src="assets/icons/square-placeholder.png" style="background-image: url('assets/img/gallery-photo-11.jpg');" onclick="show_fullsize(this)" class="gallery-image-item">
+            <img src="assets/icons/square-placeholder.png" style="background-image: url('assets/img/gallery-photo-12.jpg');" onclick="show_fullsize(this)" class="gallery-image-item">
+        </div>
+    </div>
+    <div class="gallery-fullsize-container display-none" id="gallery_fullsize_container">
+        <img src="assets/icons/close-white.svg" alt="X" class="gallery-close-button" onclick="close_fullsize_image()">
+        <img src="" id="gallery_fullsize_img" class="gallery-fullsize-img">
+        <img src="assets/icons/arrow_left-white.svg" alt="Next" class="gallery-nav gallery-nav-right" onclick="change_image('next');">
+        <img src="assets/icons/arrow_left-white.svg" alt="Previous" class="gallery-nav" onclick="change_image('previous');">
+    </div>
+    <div class="reviews" id="reviews">
+        <p class="section-title-text">Reviews</p>
+        <div class="review-container">
+            <img src="assets/icons/avatar_placeholder.svg" alt="">
+            <div class="review-header">
+                <p class="reviewer-name">William J.</p>
+                <p class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+            </div>
+            <p class="review-text">Great service! Amazing ice cream.</p>
+        </div>
+        <div class="review-container">
+            <img src="assets/icons/avatar_placeholder.svg" alt="">
+            <div class="review-header">
+                <p class="reviewer-name">John B.</p>
+                <p class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+            </div>
+            <p class="review-text">Great service and good ice cream.</p>
+        </div>
+        <div class="review-container">
+            <img src="assets/icons/avatar_placeholder.svg" alt="">
+            <div class="review-header">
+                <p class="reviewer-name">Stephanie E.</p>
+                <p class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+            </div>
+            <p class="review-text">Would recommend...fun small town shop!</p>
+        </div>
+    </div>
+    <div class="faqs" id="faqs">
+        <p class="section-title-text">Frequently Asked Questions</p>
+        <div class="faqs-container">
+            <div class="faq-item">
+                <p class="faq-title">
+                    Do you have Vegan or Sugar Free flavors?
+                </p>
+                <p class="faq-text">
+                    We cannot guarentee our current supply, however, we try to keep a dairy free, a sugar free, and a vegan option!
+                </p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-title">
+                    What flavors do you currently have?
+                </p>
+                <p class="faq-text">
+                    The flavors we carry vary from day to day, however, we try to have them listed on our Facebook page. You can also call us and ask! 
+                </p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-title">
+                    What payment methods to you take?
+                </p>
+                <p class="faq-text">
+                    We accept Visa, Mastercard, American Express, Discover, PayPal Card, Apple Pay, Google Pay, and Samsung Pay.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <p class="section-title-text">Contact Information</p>
+        <div class="contact-map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1474.6657153477636!2d-85.3497645!3d42.3354567!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2efca754e99aec73!2sLickity%20Split%20Ice%20Cream%20Shop!5e0!3m2!1sen!2smx!4v1593432215119!5m2!1sen!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="contact-text-section">
+            <p class="contact-phone-number">
+                <i class="fas fa-phone-alt"></i><a href="tel:+1(269)5696640"> (269) 569-6640</a>
+            </p>
+            <p class="contact-address">
+                <i class="fas fa-map-marker-alt"></i>
+                301 East Michigan Ave, Augusta, MI, 49012
+            </p>
+            <p class="contact-email">
+                <i class="fas fa-envelope-square"></i><a href="mailto:lickityspliticecream1@gmail.com"> lickityspliticecream1@gmail.com</a>
+            </p>
+            <div class="contact-social-links">
+                <a href="https://www.facebook.com/643004882397148">
+                    <img src="assets/icons/facebook-liquid-circle.svg" alt="">
+                    <img src="assets/icons/facebook-liquid-circle-active.svg" alt="" class="contact-social-icon-active">
+                </a>
+                <a href="https://www.instagram.com/lickityspliticecream/">
+                    <img src="assets/icons/instagram-liquid-circle.svg" alt="">
+                    <img src="assets/icons/instagram-liquid-circle-active.svg" alt="" class="contact-social-icon-active">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
